@@ -1,0 +1,65 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= S.P.I.K.E.S :- Point Process models
+
+Define a spike train as a sequence of time-ordered events. These events can be 
+- buy/sell order timings of a commodity in the market
+- all-or-none action potentials released by neurons (that last for a millisecond or less)
+and used to communicate over a long distance.
+- timings of packets sent by a computer over a network.
+
+Each event (spike) is determined by the tuple $(t,x,m)$ which correspond to the time, magnitude and type of the event occured.
+
+I looked at the following problems that involved SPIKES :).
+
+== Communication using SPIKES under queueing noise.
+
+[img{750}{150}{} figures/spikeComm.png]
+
+A message $M$ needs to be communciated over a noisy channel using a spikeTrain. But the timings in the events
+can get jittered by the queuing noise. The interarrival timings before entering 
+the queue are not the same as interdeparture timings from the queue. The problem 
+is to design an encoder and decoder to reliably communicate the message over this
+queuing  noise? What is the maximum rate of communication? 
+
+In my Masters thesis, I looked at the broadcast version of this problem where there is a single encoder
+and two decoders - one with less noise than the other. The problem is to find the achievable rate region $(R_1,R_2)$
+in this broadcast sceneario.
+
+== Modelling Multi Dimensional Point Processes
+
+[img{900}{250}{} figures/inference.png]
+
+Consider multiple neurons interacting with each other and we observe the time-series 
+of the action potentials(spikes) emitted by these neurons. The objective is to determine
+how these neurons are influening each other.
+
+One way to determine this is to 
+ - assume a generative parametric model underlying the spikeTrain generation 
+ - estimate the paramters 
+ - test how good the fit is.
+ 
+There are many issues like which generative model to use depending on our ultimate goals, different estimation techniques, and handling sparse events data,
+I will write about them here as time permits.
+
+== Network Coding for Timing Channels
+[img{300}{300}{} figures/timingchannels.png]
+
+WORK UNDER PROGRESS.
+
+The figure sums it all. Node 1 has a message $M_1$ coded in ``blue'' spikeTrain. Node 2 has another message $M_2$ coded in ``red'' spikeTrain. Nodes 5 and 6 should 
+untimately decode both messages $M_1$ and $M_2$. Assuming all the edges are noiseless, the objective is to perform coding at the nodes 3 and 4 to minimize the effective rate.
+
+
+#~~~
+#{}{img_left}{figures/multiDimPointProcess.png}{}{}{}{}
+#${\lambda_1(t)= ?}$ \n
+#$\lambda_2(t)= ?$ \n
+#$\lambda_3(t)= ?$ 
+#~~~
+
+
+
+#~~~
+#{}{img_left}{figures/spikeComm.png}{}{500}{150}{}
+#Ordinary jemdoc markup goes here.
+#~~~

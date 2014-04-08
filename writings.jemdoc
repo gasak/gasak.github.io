@@ -1,0 +1,31 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Some Interesting Problems
+I plan to update this page with concepts and notes I find interesting during my graduate studies.
+
+=== [gambler.html Gambler's Ruin Problem]
+ *a sweet example using martingale theory*. \n
+writeup: [gambler.html html]
+ 
+ 
+=== Importance Sampling in rare-event simulations for-
+- Exponential R.V. 
+- Brownian Motion  
+- Pricing Deep-Out-Of-The-Money Options  
+
+writeup: [writings/sampling.html html], [files/ImportanceSampling_Results.pdf notes], [files/ImportanceSampling.zip code](written in Java)
+
+=== Applications of Optimal Transportation Theory - short notes.
+ Recently, Optimal Transportation Theory was used in results involving 
+. Witsenhausen counter example and 
+. Posterior Matching Scheme for higher dimensions. \n
+
+A short notes on these techniques is presented [files/optTransportTheory.pdf here].
+
+== Other short notes
+. Universal Prediction of Individual Sequences. [files/IE598report_sivakumar.pdf report], [files/pres.pdf slides]
+. Monte Carlo Simulation for Pricing Asian and European Options [files/ge598project.pdf report].
+. Valuing American and European options using Binomial model. [files/Project_Ram_Siva.pdf report]
+. Brownian Motion and Stochastic Flow Systems [files/ece555_bm.pdf report].
+. Sufficient Statistics and Optimum Control of Stochastic Systems [files/ece555_ss.pdf report].
+. Econometric Analysis of cricketer's career. [files/econ_cricket.pdf report].
+. Statistical learning Techniques on various data sets [files/statLearning.pdf report].

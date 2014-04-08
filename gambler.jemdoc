@@ -1,0 +1,54 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Gambler's Ruin Problem
+
+Two gamblers Alice and Bob play the following game: Alice repeatedly tosses a fair coin. 
+After each toss that comes up H, Bob pays Alice one dollar. After each toss that comes up T, 
+Alice pays Bob one dollar. The game continues until either one or the other gambler runs out o
+f money. If Alice starts with \$A and Bob starts with \$B,
+. What is the probability that, when the game ends, Alice has all the cash?
+. What is the expected duration of the game?
+ 
+== Solution
+Lets solve the problem using the Doob’s Optional stopping Theorem for martingales.
+Let $X_1,X_2,\cdots$ be the increments of Alice’s wealth. Hence $X_i= ±1$, depending on H or T. 
+Hence, change in Alice’s cash is
+\( 
+S_n = \sum_{i=1}^n X_i 
+\)
+Define  
+\(
+\tau = \min\{t: S_t = +B \mbox{ or } S_t = -A \}
+\)
+Clearly $\tau$ is a stopping time relative to the natural filtration
+$\mathcal{F}_n = \sigma(X_1,X_2,X_3,\cdots,X_n)$. 
+$\tau' = \tau \wedge n$ is also a stopping time.
+
+=== (1) Probability of Alice winning
+The sequence $S_n$ is a martingale relative to the natural filtration $\mathcal{F}_n$. 
+Hence, using Optional Stopping Theorem for $n < \infty$,
+\( 
+ 0 = {E}[S_0] = {E}[S_{\tau \wedge n}] = -A P(\tau \leq n \mbox{ and } S_{\tau} = -A) + B P(\tau \leq n \mbox{ and } S_{\tau} = +B) + E[S_n \chi_{\tau > n}]
+ \)                                               
+ As $n \to \infty$, the probability that  $\tau > n$ converges to zero. 
+ The last term in the above equation is the expectation of a bounded martingale $S_n$
+ bounded between $–A$ and $B$ and converges to 0. Thus,
+ \(
+  0 = - A P(S_{\tau} = -A) + B P(S_{\tau} = +B) 
+ \)
+ Hence, probability that Alice has all the cash $S_{\tau} = +B$ is
+ \(
+ P(S_{\tau} = +B) = \frac{A}{A+B}.
+ \)
+ 
+=== (2) Expected duration of game.
+The sequence $(S_n^2-n)$ is a martingale relative to the natural filtration $\mathcal{F}_n$.
+Hence, using Optional Stopping Theorem for $n < \infty$,
+\( 
+ 0 = {E}[S^2_0] = {E}[S_{\tau \wedge n}^2 - (\tau \wedge n)]
+ \)                                                                                                          
+ As $n \to \infty$, the probability that  $\tau > n$ converges to zero. 
+Hence,
+\(
+E[\tau] = E[S_{\tau}^2] = A^2  P(S_{\tau} = -A) + B^2  P(S_{\tau} = +B) = AB 
+\)                               
+Hence, the expected duration of the game is AB.

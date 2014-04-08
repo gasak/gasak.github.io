@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>S.P.I.K.E.S :- Point Process models</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html" class="current">home</a></div>
+<div class="menu-category">Academics</div>
+<div class="menu-item"><a href="projects.html">Projects</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="spikes.html">S.P.I.K.E.S</a></div>
+<div class="menu-item"><a href="files/siva_gorantla_uiuc.pdf">Resume</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>S.P.I.K.E.S :- Point Process models</h1>
+</div>
+<p>Define a spike train as a sequence of time-ordered events. These events can be </p>
+<ul>
+<li><p>buy/sell order timings of a commodity in the market</p>
+</li>
+<li><p>all-or-none action potentials released by neurons (that last for a millisecond or less)
+and used to communicate over a long distance.</p>
+</li>
+<li><p>timings of packets sent by a computer over a network.</p>
+</li>
+</ul>
+<p>Each event (spike) is determined by the tuple <img class="eq" src="eqs/309497825926369845-130.png" alt="(t,x,m)" style="vertical-align: -5px" /> which correspond to the time, magnitude and type of the event occured.</p>
+<p>I looked at the following problems that involved SPIKES :).</p>
+<h2>Communication using SPIKES under queueing noise.</h2>
+<p><img src="figures/spikeComm.png" width="750px" height="150px" alt="" /></p>
+<p>A message <img class="eq" src="eqs/9856029644-130.png" alt="M" style="vertical-align: -0px" /> needs to be communciated over a noisy channel using a spikeTrain. But the timings in the events
+can get jittered by the queuing noise. The interarrival timings before entering 
+the queue are not the same as interdeparture timings from the queue. The problem 
+is to design an encoder and decoder to reliably communicate the message over this
+queuing  noise? What is the maximum rate of communication? </p>
+<p>In my Masters thesis, I looked at the broadcast version of this problem where there is a single encoder
+and two decoders - one with less noise than the other. The problem is to find the achievable rate region <img class="eq" src="eqs/1250902130828493849-130.png" alt="(R_1,R_2)" style="vertical-align: -5px" />
+in this broadcast sceneario.</p>
+<h2>Modelling Multi Dimensional Point Processes</h2>
+<p><img src="figures/inference.png" width="900px" height="250px" alt="" /></p>
+<p>Consider multiple neurons interacting with each other and we observe the time-series 
+of the action potentials(spikes) emitted by these neurons. The objective is to determine
+how these neurons are influening each other.</p>
+<p>One way to determine this is to </p>
+<ul>
+<li><p>assume a generative parametric model underlying the spikeTrain generation </p>
+</li>
+<li><p>estimate the paramters </p>
+</li>
+<li><p>test how good the fit is.</p>
+</li>
+</ul>
+<p>There are many issues like which generative model to use depending on our ultimate goals, different estimation techniques, and handling sparse events data,
+I will write about them here as time permits.</p>
+<h2>Network Coding for Timing Channels</h2>
+<p><img src="figures/timingchannels.png" width="300px" height="300px" alt="" /></p>
+<p>WORK UNDER PROGRESS.</p>
+<p>The figure sums it all. Node 1 has a message <img class="eq" src="eqs/5527445905754704090-130.png" alt="M_1" style="vertical-align: -3px" /> coded in &lsquo;&lsquo;blue&rsquo;&rsquo; spikeTrain. Node 2 has another message <img class="eq" src="eqs/5527445905754704089-130.png" alt="M_2" style="vertical-align: -3px" /> coded in &lsquo;&lsquo;red&rsquo;&rsquo; spikeTrain. Nodes 5 and 6 should 
+untimately decode both messages <img class="eq" src="eqs/5527445905754704090-130.png" alt="M_1" style="vertical-align: -3px" /> and <img class="eq" src="eqs/5527445905754704089-130.png" alt="M_2" style="vertical-align: -3px" />. Assuming all the edges are noiseless, the objective is to perform coding at the nodes 3 and 4 to minimize the effective rate.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2011-12-23 02:00:38 PST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+(<a href="spikes.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

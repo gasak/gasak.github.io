@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Gambler's Ruin Problem</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html" class="current">home</a></div>
+<div class="menu-category">Academics</div>
+<div class="menu-item"><a href="projects.html">Projects</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="spikes.html">S.P.I.K.E.S</a></div>
+<div class="menu-item"><a href="files/siva_gorantla_uiuc.pdf">Resume</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Gambler's Ruin Problem</h1>
+</div>
+<p>Two gamblers Alice and Bob play the following game: Alice repeatedly tosses a fair coin. 
+After each toss that comes up H, Bob pays Alice one dollar. After each toss that comes up T, 
+Alice pays Bob one dollar. The game continues until either one or the other gambler runs out o
+f money. If Alice starts with $A and Bob starts with $B,</p>
+<ol>
+<li><p>What is the probability that, when the game ends, Alice has all the cash?</p>
+</li>
+<li><p>What is the expected duration of the game?</p>
+</li>
+</ol>
+<h2>Solution</h2>
+<p>Lets solve the problem using the Doob’s Optional stopping Theorem for martingales.
+Let <img class="eq" src="eqs/8601805115111670620-130.png" alt="X_1,X_2,cdots" style="vertical-align: -4px" /> be the increments of Alice’s wealth. Hence <img class="eq" src="eqs/1723255280655447375-130.png" alt="X_i= ±1" style="vertical-align: -4px" />, depending on H or T. 
+Hence, change in Alice’s cash is</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/8699996800788560298-130.png" alt="  S_n = sum_{i=1}^n X_i  " />
+<br /></div><p>Define  </p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/8634121252931254433-130.png" alt=" tau = min{t: S_t = +B mbox{ or } S_t = -A } " />
+<br /></div><p>Clearly <img class="eq" src="eqs/5161649540742415246-130.png" alt="tau" style="vertical-align: -1px" /> is a stopping time relative to the natural filtration
+<img class="eq" src="eqs/1239241849595108861-130.png" alt="mathcal{F}_n = sigma(X_1,X_2,X_3,cdots,X_n)" style="vertical-align: -5px" />. 
+<img class="eq" src="eqs/7108053895047521177-130.png" alt="tau' = tau wedge n" style="vertical-align: -1px" /> is also a stopping time.</p>
+<h3>(1) Probability of Alice winning</h3>
+<p>The sequence <img class="eq" src="eqs/1228887169310443041-130.png" alt="S_n" style="vertical-align: -4px" /> is a martingale relative to the natural filtration <img class="eq" src="eqs/6867941070886111908-130.png" alt="mathcal{F}_n" style="vertical-align: -4px" />. 
+Hence, using Optional Stopping Theorem for <img class="eq" src="eqs/7551002455107256244-130.png" alt="n &lt; infty" style="vertical-align: -1px" />,</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/739423872982183718-130.png" alt="   0 = {E}[S_0] = {E}[S_{tau wedge n}] = -A P(tau leq n mbox{ and } S_{tau} = -A) + B P(tau leq n mbox{ and } S_{tau} = +B) + E[S_n chi_{tau &gt; n}]  " />
+<br /></div><p>As <img class="eq" src="eqs/4266818919394545691-130.png" alt="n to infty" style="vertical-align: -1px" />, the probability that  <img class="eq" src="eqs/576420537431391170-130.png" alt="tau &gt; n" style="vertical-align: -1px" /> converges to zero. 
+The last term in the above equation is the expectation of a bounded martingale <img class="eq" src="eqs/1228887169310443041-130.png" alt="S_n" style="vertical-align: -4px" />
+bounded between <img class="eq" src="eqs/1852326263664305754-130.png" alt="–A" style="vertical-align: -0px" /> and <img class="eq" src="eqs/8448025411-130.png" alt="B" style="vertical-align: -0px" /> and converges to 0. Thus,</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/7384705726868791352-130.png" alt="   0 = - A P(S_{tau} = -A) + B P(S_{tau} = +B)   " />
+<br /></div><p>Hence, probability that Alice has all the cash <img class="eq" src="eqs/3867260416956766991-130.png" alt="S_{tau} = +B" style="vertical-align: -4px" /> is</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/2386842226674228478-130.png" alt="  P(S_{tau} = +B) = frac{A}{A+B}.  " />
+<br /></div><h3>(2) Expected duration of game.</h3>
+<p>The sequence <img class="eq" src="eqs/584193522935047913-130.png" alt="(S_n^2-n)" style="vertical-align: -6px" /> is a martingale relative to the natural filtration <img class="eq" src="eqs/6867941070886111908-130.png" alt="mathcal{F}_n" style="vertical-align: -4px" />.
+Hence, using Optional Stopping Theorem for <img class="eq" src="eqs/7551002455107256244-130.png" alt="n &lt; infty" style="vertical-align: -1px" />,</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/5352969489755853610-130.png" alt="   0 = {E}[S^2_0] = {E}[S_{tau wedge n}^2 - (tau wedge n)]  " />
+<br /></div><p>As <img class="eq" src="eqs/4266818919394545691-130.png" alt="n to infty" style="vertical-align: -1px" />, the probability that  <img class="eq" src="eqs/576420537431391170-130.png" alt="tau &gt; n" style="vertical-align: -1px" /> converges to zero. 
+Hence,</p>
+
+<div class="eqwl"><img class="eqwl" src="eqs/6389465357733989642-130.png" alt=" E[tau] = E[S_{tau}^2] = A^2  P(S_{tau} = -A) + B^2  P(S_{tau} = +B) = AB  " />
+<br /></div><p>Hence, the expected duration of the game is AB</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2011-12-23 02:00:36 PST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+(<a href="gambler.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

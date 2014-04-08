@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Problems in Social Networks</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html" class="current">home</a></div>
+<div class="menu-category">Academics</div>
+<div class="menu-item"><a href="projects.html">Projects</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="spikes.html">S.P.I.K.E.S</a></div>
+<div class="menu-item"><a href="files/siva_gorantla_uiuc.pdf">Resume</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Problems in Social Networks</h1>
+<div id="subtitle">Social computing is concerned with the study of social behavior and social context based
+on computational systems. There are various data mining tasks that can performed</div>
+</div>
+<ul>
+<li><p>Centrality Analysis</p>
+</li>
+<li><p>Community Detection </p>
+</li>
+<li><p>Classification</p>
+</li>
+<li><p>Link Prediction</p>
+</li>
+<li><p>Viral Marketing</p>
+</li>
+<li><p>Network Modeling</p>
+</li>
+</ul>
+<h2>Network Modularity (Community Detection)</h2>
+<p>A <i>community</i> (a.k.a. group, subgroup, module, cluster)  is a set of nodes between which the interactions are (relatively) frequent.</p>
+<p><i>Community Detection</i> (a.k.a. grouping, clustering, finding cohesive subgroups) is to
+“formalize the strong social groups based on the social network properties”. It is helpful in understanding the interactions between people, visualizing and navigating
+huge networks, forming the basis for other tasks such as data mining.</p>
+<ul>
+<li><p>Given: a social network - an adjacency matrix</p>
+</li>
+<li><p>Output: community membership of (some) actors</p>
+</li>
+</ul>
+<h3>Ways to solve network modularity problem</h3>
+<p>Assume</p>
+<ul>
+<li><p>probability of two people belonging to a same community to be friends is <img class="eq" src="eqs/3747341959643364841-130.png" alt="v_c" style="vertical-align: -4px" />.</p>
+</li>
+<li><p>probability of two people <i>not</i> belonging to a same community to be friends is <img class="eq" src="eqs/3747341959643364848-130.png" alt="v_d" style="vertical-align: -4px" />. (<img class="eq" src="eqs/1453415329297996790-130.png" alt="v_d &lt; v_c" style="vertical-align: -4px" />).</p>
+</li>
+<li><p>probability vector representing the proportions of each community's population to the total population be <img class="eq" src="eqs/3330184131065144515-130.png" alt="vec{pi}_{mu}" style="vertical-align: -6px" />.</p>
+</li>
+</ul>
+<h4>The notion of free energy</h4>
+<p>By assigning a cost (free energy) to both inter-community friendships and intra-community friendships,
+it is possible to cluster the population into communities to minimize the net free energy in the system!</p>
+<p>Free energy cost gives an advantage in comparing models that assume different modularities.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2012-05-31 23:59:03 PDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+(<a href="ref-socialnetworks.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

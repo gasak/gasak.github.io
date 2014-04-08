@@ -1,0 +1,45 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Inference on Graphical Models
+
+== Notes
+The [http://www.stanford.edu/~montanar/TEACHING/Stat375/handouts/notes_stat375_1.pdf lecture notes]
+on Inference on Graphical Models by Prof. Andrea Montenari is a comprehensive notes to start.
+
+
+== Books
+ - M. Jordan (ed.), [http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=8141 Learning in Graphical Models], MIT Press, 1998
+ - M. Jordan and T. J. Sejnowski (eds.), [http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=4164 Graphical Models], MIT Press, 2001
+ - M. Wainwright and M. Jordan, [http://www.nowpublishers.com/product.aspx?product=MAL&doi=2200000001 Graphical models, exponential families, and variational inference], Foudations and Trends in Machine Learning, 2008
+ - M. Mézard and A. Montanari, [http://www.stanford.edu/~montanar/RESEARCH/book.html Information, Physics and Computation], Oxford University Press, 2009
+ - D. Koller and N. Friedman, [http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11886 Probabilistic Graphical Models: Principles and Techniques], The MIT Press, 2009
+ - Christopher M. Bishop, [http://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738 Pattern Recognition and Machine Learning], Slides for graphical models [http://research.microsoft.com/en-us/um/people/cmbishop/PRML/slides/prml-slides-8.pdf chapter of PRML book].
+
+== Important papers
+ - F.R. Kschischang, B.J. Frey, and H.-A. Loeliger, Factor Graphs and the Sum-Product Algorithm
+ - Christopher M. Bishop, [http://www.springerlink.com/content/h0734721t826l265/fulltext.pdf A new framework for Machine Learning]
+ - Talk on Graphical models by Christopher M. Bishop, [http://research.microsoft.com/en-us/um/people/cmbishop/talks/Bishop_CIP_2010.pdf slides]
+ - J.S. Yedidia, W.T. Freeman, and Y. Weiss, Constructing free energy approximations and generalized belief propagation algorithms
+ - J.S. Yedidia, An Idiosyncratic Journey Beyond Mean Field Theory
+ - M.J. Wainwright, T.S. Jaakkola, and A.S. Willsky, MAP Estimation Via Agreement on Trees: Message-Passing and Linear Programming
+ - M.J. Wainwright, T.S. Jaakkola, and A.S. Willsky, A New Class of Upper Bounds on the Log Partition Function
+ - A. Sinclair, Convergence Rates for Monte Carlo Experiments
+ - M. Jerrum and A. Sinclair, The Markov Chain Monte Carlo Method: An Approach to Approximate Counting and Integration
+ - R. Bubley and M. Dyer, Path Coupling: A Technique for Proving Rapid Mixing in Markov Chains
+ - S. Tatikonda and M. Jordan, Loopy Belief Propagation and Gibbs Measures
+ - D. Weitz, Combinatorial Criteria for Uniqueness of Gibbs Measures
+ - D. Weitz, Counting independent sets up to the tree threshold
+ - M.G. Luby, M. Mitzenmacher, M.A. Shokrollahi, D.A. Spielman, and V. Stenmann, Practical Loss-Resilient Codes
+ - D. Mitchell, B. Selman and H. Levesque, Hard and easy distributions of SAT problems
+ - T.J. Richardson and R. Urbanke, The Capacity of Low Density Parity Check Codes Under Message-Passing Decoding
+ 
+ == Worth looking at
+  - [http://research.microsoft.com/en-us/um/cambridge/projects/infernet/ Infer.Net] project at Microsoft. Machine Learning at Microsoft Research, Cambridge, UK
+  
+ == People
+  - [http://www.stanford.edu/~montanar/ Andrea Montanari]s, Michael Jordan, Christopher Bishop.
+ 
+ 
+
+
+
+

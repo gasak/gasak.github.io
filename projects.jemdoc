@@ -1,0 +1,67 @@
+# jemdoc: menu{MENU}{index.html}, showsource 
+= Projects
+
+== Relationship Mining for Adchemy IntentMap
+~~~
+{}{img_left}{figures/intentmap.png}{}{600}{250}{}
+Part of IntentMap project which led to [http://www.adchemy.com/2011/09/21/dow-jones-adchemy-scores-61m-series-e-microsoft-partnership/ $61M Adchemy-Microsoft Partnership]
+~~~
+
+IntentMap is a graphical structure that captures customers' intents and
+used to improve scalability on ad-campaigns. Developed various metrics
+and algorithms than can 
+- find collocations/relationship strengths among entities, 
+- build and scale an IntentMap from unstructured datasets and structured datasets.
+
+== Stock Market App \*
+*Inference on high-frequency data using multi-dim point process models.*
+
+- Built inference models for order-book data (stock exchanges) to capture causal relationships.
+Implemented all modules of parameter estimation for point process models  in C\+\+. (see my notes on [spikes.html SPIKES])
+
+~~~
+{}{img_left}{figures/inference.png}{}{600}{150}{}
+\*Details upon completion in 2012.
+~~~
+
+== Adcampaign Bid Management
+- Feature selection and improving statistical learning models for automating bids for keywords (with an objective of
+improving ROI on Google ad-Campaigns). 
+#- Built models based upon past performance indices and linguistic features. Other tasks include
+#optimizing lookback period (training data size), and introducing relevant features. 
+- Monitered and improved ROI on a test campaign. 
+
+== Optimal Sensor Selection for [http://www.musyc.org/theme/smallscale/ small scale systems]
+Sensor scheduling is a simple problem that begins to address the issues of managing hardware resources in highly energy-constrained devices, placed in dynamic environments.
+
+The controller has to keep switching between a `good' sensor with high usage cost and `noisy' sensor with low cost. Developed a selection algorithm based on `sequential
+information gain' metric and evaluated its performance.
+
+== Optimal Transportation Theory as a solver for Multi-Dim message point communciation.
+Fast and Optimal feedback based communication schemes of a multi-dim message point. 
+[img{600}{200}{} figures/ott.png]
+
+For example, the figure shows communicatin of a 2D message point on $[0,1]^2$ (e.g. (0.8,0.2)). 
+
+== Other Projects
+
+=== Prediction and Learning
+. Universal Prediction of Individual Sequences. [files/IE598report_sivakumar.pdf report], [files/pres.pdf slides]
+. Statistical learning Techniques on benchmark data sets [files/statLearning.pdf report].
+. Time Series Analysis of benchmark data sets [files/ProjectStat429.pdf report]
+. Econometric Analysis of cricketer's career. [files/econ_cricket.pdf report].
+
+=== Simulation
+. Importance Sampling in rare-event simulations for pricing Deep-Out-Of-The-Money Options writeup: [writings/sampling.html html], [files/ImportanceSampling_Results.pdf notes], [files/ImportanceSampling.zip Java code]
+. Monte Carlo Simulation for Pricing Asian and European Options [files/ge598project.pdf report].
+. Valuing American and European options using Binomial model. [files/Project_Ram_Siva.pdf report]
+
+=== Control \& Communication Theory
+. Applications of Optimal Transportation Theory to Witsenhausen problem and Feedback communications
+. Brownian Motion and Stochastic Flow Systems [files/ece555_bm.pdf report].
+. Sufficient Statistics and Optimum Control of Stochastic Systems [files/ece555_ss.pdf report].
+
+=== Probability Theory
+. Gamble's ruin problem [gambler.html html]
+=== Fun in CS225 course
+[img{}{}{} figures/solved50.bmp]

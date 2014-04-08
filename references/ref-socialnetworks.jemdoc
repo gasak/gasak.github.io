@@ -1,0 +1,34 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Problems in Social Networks
+Social computing is concerned with the study of social behavior and social context based
+on computational systems. There are various data mining tasks that can performed
+- Centrality Analysis
+- Community Detection 
+- Classification
+- Link Prediction
+- Viral Marketing
+- Network Modeling
+
+== Network Modularity (Community Detection)
+
+A /community/ (a.k.a. group, subgroup, module, cluster)  is a set of nodes between which the interactions are (relatively) frequent.
+
+/Community Detection/ (a.k.a. grouping, clustering, finding cohesive subgroups) is to
+“formalize the strong social groups based on the social network properties”. It is helpful in understanding the interactions between people, visualizing and navigating
+huge networks, forming the basis for other tasks such as data mining.
+
+- Given: a social network - an adjacency matrix
+- Output: community membership of (some) actors
+
+
+=== Ways to solve network modularity problem
+Assume
+- probability of two people belonging to a same community to be friends is $v_c$.
+- probability of two people /not/ belonging to a same community to be friends is $v_d$. ($v_d < v_c$).
+- probability vector representing the proportions of each community's population to the total population be $\vec{\pi}_{\mu}$.
+
+==== The notion of free energy
+By assigning a cost (free energy) to both inter-community friendships and intra-community friendships,
+it is possible to cluster the population into communities to minimize the net free energy in the system!
+
+Free energy cost gives an advantage in comparing models that assume different modularities.

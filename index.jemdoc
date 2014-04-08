@@ -1,0 +1,87 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= Siva Kumar Gorantla
+
+~~~
+{}{img_left}{figures/gorantla.jpg}{500}{250}{}{}
+[index.html Siva Kumar Gorantla], \n
+Ph.D Candidate, \n
+[http://www.ece.illinois.edu Dept. of Electrical Engineering], \n
+[http://www.illinois.edu University of Illinois, Urbana Champaign]
+
+Advisor: [http://coleman.ucsd.edu Prof. Todd Coleman]
+~~~
+
+~~~
+{}
+I successfully defended my doctoral dissertation, titled [files/thesis.pdf /The Interplay between Information and Control Theory within Interactive Decision-making Problems/] advised by [http://coleman.ucsd.edu/ Prof. Todd Coleman] on March 12,2012.  
+\n I am currently with [http://www.adchemy.com Adchemy Inc.] You can contact me at sivakumar.gorantla AT gmail DOT com.
+~~~
+
+== Education
+- University of Illinois, Urbana Champaign
+-- Ph.D. Electrical and Computer Engineering, 2009-2012.
+-- Applied M.S. in Statistics, May 2012.
+-- M.S. Electrical and Computer Engineering, 2007-2009.
+- Indian Institute of Technology, Madras
+-- B.Tech, Electrical Engineering, 2003-2007.
+
+== Contact
+Email: sgorant2 AT illinois DOT edu
+
+#== Resume
+#Click [files/Siva_PhD_UIUC.pdf here] for my resume.
+
+== Research Interests
+- Information theory and its interplay with stochastic control and team-decision theory.
+- Statistical Learning, inference and prediction.
+- Optimization \n
+Focus: Applying math to understand the dynamics of Ads, Markets, and networks.
+
+== Awards & Accomplishments
+- [http://www.ece.illinois.edu/students/grad/fellowships/henderson.html James Henderson Fellowship Award] at UIUC - 2008.
+- [http://www.iitm.ac.in/studentawards S Subramanian Award](Institute Merit Prize) from IIT Madras - 2004.
+- [http://dteap.ac.in/pratibha%20scholarship.htm Prathibha Scholarship] from Govt. of Andhra Pradesh, India. Merit Award from HR&D Ministry, Govt. of India.
+- All India Rank 7 ([http://www.aieee.nic.in AIEEE] 2003) and State Rank 1 (EAMCET 2003) in Engg Entrance Exams.
+
+== Publications
+=== Journals
+ - [http://arxiv.org/abs/1101.1934 Multi-layer Bit-wise Unequal Error Protection for Variable Length Blockcodes with Feeback], \n
+ Siva K. Gorantla, B. Nakiboglu, Todd P. Coleman, Lizhong Zheng, \n
+ submitted to IEEE Transactions on Information Theory, Jan 2011.
+ - [http://arxiv.org/abs/1102.0250 Information Theoretic Viewpoints on Optimal Causal Coding-Decoding Problems], \n
+ Siva K. Gorantla, Todd P. Coleman, \n
+ submitted to IEEE Transactions on Information Theory, Jan 2011.
+ - [http://ieeexplore.ieee.org/search/srchabstract.jsp?tp=&arnumber=5970117 Characterizing the Efficacy of the NRL Network Pump in Mitigating Covert Timing Channels], \n
+ Siva K. Gorantla, S. Kadloor, N.Kiyavash, Todd P. Coleman, I. Moskowitz, \n
+ appeared on IEEE Transactions on Information Forensics and Security (IEEE-TIFS), Aug 2011.
+=== Conference Papers
+- [http://colemant.ece.illinois.edu/pubs/ISIT_GC_2011_FINAL.pdf Equivalence Between Reliable Feedback Communication and Nonlinear Filter Stability], \n
+Siva K. Gorantla and Todd P. Coleman, \n
+appeared at the IEEE International Symposium on Information Theory (ISIT) , St Petersburg, Russia, Aug 2011.
+- [http://colemant.ece.illinois.edu/pubs/ISIT2010GorantlaColemanSubmission.pdf On Reversible Markov Chains and Maximization of Directed Information], \n
+Siva K. Gorantla and Todd P. Coleman, \n
+IEEE International Symposium on Information Theory (ISIT) , Jan 2010 \n
+(also appeared at a special session on control and communications, Information Theory and Applications \n 
+Annual Workshop, San Diego, CA, February 2010).
+- [http://colemant.ece.illinois.edu/pubs/UEPISIT2010submission.pdf Bit-wise Unequal Error Protection for Variable Length Blockcodes with Feedback], \n
+Siva K. Gorantla, Baris Nakiboglu, Todd P. Coleman, Lizhong Zheng \n
+published in International Symposium on Information Theory (IEEE-ISIT), Austin, Texas, June 2010.
+- [http://colemant.ece.illinois.edu/pubs/GorantlaColemanCDC2010FINAL.pdf A Stochastic Control Approach to Coding with Feedback over Degraded Broadcast Channels ], \n
+Siva K. Gorantla, T. P. Coleman, \n
+published in 49th IEEE Conference on Decision and Control (CDC), Atlanta, Georgia, Dec 2010.
+- [http://colemant.ece.illinois.edu/pubs/EbeidGorantlaColemanMILCOM2010final.pdf A Necessary Condition for Reliable Communication With Feedback Based Upon Lyapunov Exponents of Dynamical Systems] \n
+H. Ebeid, Siva K. Gorantla, T. P. Coleman,  \n
+published in 2010 Military Communications Conference, San Jose, Oct 2010.
+- [http://colemant.ece.illinois.edu/pubs/ISITA2010GKCKMKfinal.pdf Directed Information and the NRL Network Pump] \n
+Siva K. Gorantla, S. Kadloor, T.P. Coleman, N. Kiyavash,I. Moskowitz, M. Kyang,\n
+published in International Symposium on Information Theory and its Applications (ISITA), Taiwan, Oct 2010.
+- Siva K. Gorantla, Muriel Medard, Todd P. Coleman,
+“Network Coding for Timing Channels", in preparation.
+- “Siva K. Gorantla and T. P. Coleman,
+“An achievable region for the Exponential Server Broadcast Timing Channel", in preparation.
+
+
+== Teaching
+Teaching Assistant at University of Illinois, Urbana Champaign for
+- Information Theory (ECE 563) - Fall 2008
+- Adv. Digital Communications (ECE 461 and 562) - Spr 2009,Fall 2009.
